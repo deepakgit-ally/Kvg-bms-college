@@ -1,0 +1,135 @@
+/* GetInTouchForm.css */
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #E1F8DC;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.beautiful-hr {
+  height: 3px; /* Set the height of the line */
+  background-color: #3498db; /* Set the color of the line */
+  border: none; /* Remove default border */
+  margin: 20px 0; /* Add some space around the line */
+  animation: pulse 2s infinite alternate; /* Apply animation */
+}
+
+@keyframes pulse {
+  0% {
+    width: 0%; /* Start with 0 width */
+  }
+  100% {
+    width: 100%; /* End with 100% width */
+  }
+}
+
+
+
+
+.form-container {
+  animation: slideIn 0.25s ease-in-out ;
+  /* background-image: url("./Assets/Image/vintage-pink.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  background-color: #f5f5f5;
+  border-radius: 10px;
+
+}
+
+
+.Animatio{
+  --bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);
+}
+
+h1 {
+  color: black;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+h2 {
+  color: black --importent--;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/* .BackGround{
+background-image:url(../public/Image/Photoshop-Replace-Background-Featured.avif) ;
+background-repeat: no-repeat;
+object-fit: contain;
+background-size: cover;
+background-position:  top;
+height: 100vh;
+width: 100vw;
+} */
+
+.facilities-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.facility-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(50% - 20px);
+}
+.facility-card:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.hover{
+  box-shadow: chocolate;
+}
+.hover:hover{
+  transform: scale(1.05);
+  transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+  box-shadow: #816969;
+  border: bottom 40%; ;
+
+}
+ 
+
+
+@media (max-width: 768px) {
+  .facility-card {
+    width: 100%;
+  }
+}
+.enquiry-form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+stars {
+  background-image: url('./Assets/Image/flat.jpg'); /* Background image with stars animation */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: cover;
+}
+
+@media (max-width: 576px) {
+  .enquiry-form-container {
+    max-width: 100%;
+  }
+}
